@@ -1,6 +1,5 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #df5c5c;
 }
 a {
     text-decoration: none;
@@ -40,7 +39,7 @@ img {
 }
 /* ---------header--------- */
 .header {
-    background-color: #df5c5c;
+    background-color: #FEFEFE;
 }
 .header-container {
     display: flex;
