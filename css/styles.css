@@ -30,6 +30,10 @@ ol {
 img {
     display: block;
 }
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
 
 .container {
     width: 1280px;
@@ -98,13 +102,17 @@ img {
 /* ------------------------ */
 /* -----hero--------------- */
 .hero {
-    display: block;
-    background-color: #FEFEFE;
-    
+    background-color: #FEFEFE; 
 }
 
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+}
+.hero-text-section {
+    max-width: 511px;
+}
 .hero-title {
-    display: block;
     color: #2C2C2C;
     max-width: 502.42px;
     font-size: 48px;
@@ -115,7 +123,6 @@ img {
 }
 
 .hero-text {
-    display: block;
     color: #2C2C2C;
     max-width: 511px;
     font-size: 16px;
@@ -125,10 +132,73 @@ img {
     margin-top: 28px;
     margin-bottom: 40px;
 }
-.picture{
-    align-items: flex-start;
-    float: right;
+.hero-picture-section {
+    width: 580px;
+}
+.border-img {
+    border: 26px solid #FFE550;
+    border-radius: 100%;
+}
+/* ------------------------ */
+/* --------benefits-------- */
+.benefits {
+    background-color: #FFE550;
+}
+.benefits-section {
+    display: flex;
+    gap: 90px;
+    /* justify-content: space-between; */
+}
+.benefits-img-section {
+    border: 5px solid #fff;
+    border-radius: 100%;
 }
 
+.benefits-img-border {
+    border: 20px solid #FFE550;
+    border-radius: 100%;
+}
 
-/* ------------------------ */
+.benefits-text-section {}
+
+.benefits-title {
+    width: 526.17px;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.benefits-text {
+    width: 500px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+.subtitle-section {
+    display: flex;
+    gap: 67px;
+}
+.left-subtitle-section {
+    /* display: flex; */
+}
+.right-subtitle-section {
+    /* display: flex; */
+}
+.benefits-subtitle {
+    width: 125px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.benefits-subtext {
+    width: 253px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+/* ----------------------- */
