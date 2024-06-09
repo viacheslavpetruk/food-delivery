@@ -6,16 +6,26 @@
     <title>Food Delivery</title>
     <link
       rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kalam&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    
   </head>
   <body>
     <header class="header">
@@ -25,13 +35,19 @@
             <img src="./images/vector.jpg" alt="FoodSta" width="66" height="52"
           /></a>
           <ul class="navigation-list">
-            <li><a class="navigation-home-link" href="./index.html"><span class="home-colored">Home</span></a></li>
+            <li>
+              <a class="navigation-home-link" href="./index.html"
+                ><span class="home-colored">Home</span></a
+              >
+            </li>
             <li><a class="navigation-link" href="">About</a></li>
             <li><a class="navigation-link" href="">Service</a></li>
             <li><a class="navigation-link" href="">Menu</a></li>
             <li><a class="navigation-link" href="">Contact</a></li>
             <li>
-              <button class="navigation-btn" type="button">Order Now</button>
+              <button class="navigation-btn" data-modal-open type="button">
+                Order Now
+              </button>
             </li>
           </ul>
         </nav>
@@ -46,43 +62,83 @@
             <p class="hero-text">
               With just a few clicks, you can have your favorite meals delivered
               straight to your doorstep, no matter where you are. Order now and
-              enjoy a hassle-free and delicious meal from the comfort of your own
-              home.
+              enjoy a hassle-free and delicious meal from the comfort of your
+              own home.
             </p>
             <button class="navigation-btn" type="button">Order Service</button>
           </div>
-          <div class="hero-picture-section">
-            <img class="border-img" src="./images/salad.png" alt="Food" width="528" />
+          <div class="hero-picture-section single-item">
+            <div>
+              <img
+                class="border-img"
+                src="./images/salad.png"
+                alt="Food"
+                width="528"
+              />
+            </div>
+            <div>
+              <img
+                class="border-img"
+                src="./images/borshch.jpg"
+                alt="Food"
+                width="528"
+              />
+            </div>
+            <div>
+              <img
+                class="border-img"
+                src="./images/pizza.jpg"
+                alt="Food"
+                width="528"
+              />
+            </div>
           </div>
+          <!-- <div class="hero-picture-section">
+            <img
+              class="border-img"
+              src="./images/salad.png"
+              alt="Food"
+              width="528"
+            />
+          </div> -->
         </div>
       </section>
       <!-- benefits -->
-      <section class="benefits"> 
+      <section class="benefits">
         <div class="section benefits-section">
-          <div class="benefits-img-section"><img class="benefits-img-border" src="./images/apple.jpg" alt="Food" width="396" height="502" /></div>
+          <div class="benefits-img-section">
+            <img
+              class="benefits-img-border"
+              src="./images/apple.jpg"
+              alt="Food"
+              width="396"
+              height="502"
+            />
+          </div>
           <div class="benefits-text-section">
-            <h2 class="benefits-title" >What’s Special About Our Offerings</h2>
+            <h2 class="benefits-title">What’s Special About Our Offerings</h2>
             <p class="benefits-text">
               With our platform, you can browse through a diverse selection of
-              cuisines and local restaurants, and choose from a variety of dishes
-              that cater to your specific taste buds.
+              cuisines and local restaurants, and choose from a variety of
+              dishes that cater to your specific taste buds.
             </p>
             <div class="subtitle-section">
               <div class="left-subtitle-section">
                 <img src="./images/rocket-launch.jpg" alt="Food" width="48" />
                 <h3 class="benefits-subtitle">Fasest Delivery</h3>
                 <p class="benefits-subtext">
-                  Our advanced logistics system and dedicated delivery partners ensure
-                  that your meals are delivered to you within 30-minutes.
+                  Our advanced logistics system and dedicated delivery partners
+                  ensure that your meals are delivered to you within 30-minutes.
                 </p>
               </div>
-            
+
               <div class="right-subtitle-section">
                 <img src="./images/touch.jpg" alt="Food" width="48" />
                 <h3 class="benefits-subtitle">Easy To Order</h3>
                 <p class="benefits-subtext">
-                  You can browse through a wide variety of cuisines and restaurants,
-                  select your favorite meals, and place your order in just a few clicks.
+                  You can browse through a wide variety of cuisines and
+                  restaurants, select your favorite meals, and place your order
+                  in just a few clicks.
                 </p>
               </div>
             </div>
@@ -158,33 +214,104 @@
     </main>
     <footer>
       <section class="footer">
-        <div class="section footer-section">
-          <nav class="navigation">
-            <a lass="logo" href="./index.html">
-              <img src="./images/vector.jpg" alt="FoodSta" width="66" height="52"
-            /></a>
-            <ul class="navigation-list">
-              <li class="navigation-item"><a href="./index.html">Home</a></li>
-              <li class="navigation-item"><a href="">About</a></li>
-              <li class="navigation-item"><a href="">Service</a></li>
-              <li class="navigation-item"><a href="">Menu</a></li>
-              <li class="navigation-item"><a href="">Contact</a></li>
-              <!-- <li> 
-                <button type="button">Order Service</button>
-              </li>-->
-            </ul>
+        <div class="container footer-section">
+          <div class="footer-navigation-section">
+            <div>
+              <nav class="footer-navigation">
+                <a class="logo" href="./index.html">
+                  <img
+                    src="./images/vector.jpg"
+                    alt="FoodSta"
+                    width="66"
+                    height="52"
+                /></a>
+                <ul class="footer-navigation-list">
+                  <li class="navigation-item">
+                    <a href="./index.html">Home</a>
+                  </li>
+                  <li class="navigation-item"><a href="">About</a></li>
+                  <li class="navigation-item"><a href="">Service</a></li>
+                  <li class="navigation-item"><a href="">Menu</a></li>
+                  <li class="navigation-item"><a href="">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer-modal-section">
+              <h4>Subscribe</h4>
+              <button type="button">Subscribe</button>
+              <p>
+                By subscribing you agree to with our
+                <span> Privacy Policy </span>
+              </p>
+            </div>
+          </div>
+          <div class="footer-bottom">
             <ul>
               <li><a href="">Privacy Policy</a></li>
               <li><a href="">Terms of Service</a></li>
               <li><a href="">Cookies Settings</a></li>
             </ul>
-          </nav>
-          <h4>Subscribe</h4>
-          <!-- form -->
-          <button type="button">Subscribe</button>
-          <p>By subscribing you agree to with our <span a href="">Privacy Policy</a></span> </p>
+          </div>
         </div>
       </section>
     </footer>
+    <div class="backdrop" is-hidden data-modal>
+      <div class="modal">
+        <button class="modal-close-btn" type="button" data-modal-close>
+          <svg class="modal-close-icon" width="10.76" height="10.76">
+            <use href="./images/icons.svg#icon-x"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Order Form</p>
+        <form action="">
+          <ul class="modal-form-list">
+            <li>
+              <label for="user-name" class="modal-label">Name</label>
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="modal-input"
+                placeholder="Your name"
+              />
+            </li>
+            <li>
+              <label for="user-tel" class="modal-label">Phone number</label>
+              <input
+                type="text"
+                name="user-tel"
+                id="user-tel"
+                class="modal-input"
+                placeholder="+38(0_ _) _ _ _   _ _   _ _"
+              />
+            </li>
+            <li>
+              <label for="user-email" class="modal-label">E-mail</label>
+              <input
+                type="text"
+                name="user-email"
+                id="user-email"
+                class="modal-input"
+                placeholder="example@gmail.com"
+              />
+            </li>
+          </ul>
+          <button type="submit" class="modal-send-btn">Send</button>
+        </form>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
