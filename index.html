@@ -56,7 +56,7 @@
     <main>
       <!-- hero -->
       <section class="hero">
-        <div class="container">
+        <div class="container hero-container">
           <div class="hero-text-section">
             <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
             <p class="hero-text">
@@ -105,50 +105,53 @@
       </section>
       <!-- benefits -->
       <section class="benefits">
-        <div class="section benefits-section">
-          <div class="benefits-img-section">
-            <img
-              class="benefits-img-border"
-              src="./images/apple.jpg"
-              alt="Food"
-              width="396"
-              height="502"
-            />
-          </div>
-          <div class="benefits-text-section">
-            <h2 class="benefits-title">What’s Special About Our Offerings</h2>
-            <p class="benefits-text">
-              With our platform, you can browse through a diverse selection of
-              cuisines and local restaurants, and choose from a variety of
-              dishes that cater to your specific taste buds.
-            </p>
-            <div class="subtitle-section">
-              <div class="left-subtitle-section">
-                <img src="./images/rocket-launch.jpg" alt="Food" width="48" />
-                <h3 class="benefits-subtitle">Fasest Delivery</h3>
-                <p class="benefits-subtext">
-                  Our advanced logistics system and dedicated delivery partners
-                  ensure that your meals are delivered to you within 30-minutes.
-                </p>
-              </div>
-
-              <div class="right-subtitle-section">
-                <img src="./images/touch.jpg" alt="Food" width="48" />
-                <h3 class="benefits-subtitle">Easy To Order</h3>
-                <p class="benefits-subtext">
-                  You can browse through a wide variety of cuisines and
-                  restaurants, select your favorite meals, and place your order
-                  in just a few clicks.
-                </p>
-              </div>
+        <div class="container benefits-background">
+          <div class="benefits-section">
+            <div class="benefits-img-section">
+              <img
+                class="benefits-img-border"
+                src="./images/apple.jpg"
+                alt="Food"
+                width="396"
+                height="502"
+              />
             </div>
-            <button type="button">Order Service</button>
+            <div class="benefits-text-section">
+              <h2 class="benefits-title">What’s Special About Our Offerings</h2>
+              <p class="benefits-text">
+                With our platform, you can browse through a diverse selection of
+                cuisines and local restaurants, and choose from a variety of
+                dishes that cater to your specific taste buds.
+              </p>
+              <div class="subtitle-section">
+                <div class="left-subtitle-section">
+                  <img src="./images/rocket-launch.jpg" alt="Food" width="48" />
+                  <h3 class="benefits-subtitle">Fasest Delivery</h3>
+                  <p class="benefits-subtext">
+                    Our advanced logistics system and dedicated delivery
+                    partners ensure that your meals are delivered to you within
+                    30-minutes.
+                  </p>
+                </div>
+
+                <div class="right-subtitle-section">
+                  <img src="./images/touch.jpg" alt="Food" width="48" />
+                  <h3 class="benefits-subtitle">Easy To Order</h3>
+                  <p class="benefits-subtext">
+                    You can browse through a wide variety of cuisines and
+                    restaurants, select your favorite meals, and place your
+                    order in just a few clicks.
+                  </p>
+                </div>
+              </div>
+              <button type="button" class="benefits-btn">Order Service</button>
+            </div>
           </div>
         </div>
       </section>
       <!-- menu -->
       <section class="menu">
-        <div class="section menu-section">
+        <div class="container menu-section">
           <div class="menu-title-section">
             <h2 class="menu-title">Some of Our Favorites</h2>
             <p class="menu-text">Looking for something delicious?</p>
@@ -236,21 +239,53 @@
                 </ul>
               </nav>
             </div>
-            <div class="footer-modal-section">
-              <h4>Subscribe</h4>
-              <button type="button">Subscribe</button>
-              <p>
+            <div class="footer-third-part">
+              <p class="footer-form-title">Subscribe</p>
+              <form class="footer-form">
+                <label
+                  for="footer-email"
+                  aria-label="email"
+                  class="footer-label"
+                >
+                  <input
+                    name="footer-email"
+                    type="email"
+                    placeholder="Enter your email"
+                    class="footer-input"
+                    id="footer-email"
+                  />
+                </label>
+                <button type="submit" class="footer-btn">Subscribe</button>
+              </form>
+              <p class="footer-modal-text">
+                By subscribing you agree to with our
+                <span class="footer-modal-item"
+                  ><a href="" class="footer-modal-link">Privacy Policy</a>
+                </span>
+              </p>
+            </div>
+            <!-- <div class="footer-modal-section">
+              <h4 class="footer-modal-section-title">Subscribe</h4>
+              <button type="button" class="footer-modal-btn">Subscribe</button>
+              <p class="footer-modal-text">
                 By subscribing you agree to with our
                 <span> Privacy Policy </span>
               </p>
-            </div>
+            </div> -->
           </div>
           <div class="footer-bottom">
-            <ul>
-              <li><a href="">Privacy Policy</a></li>
-              <li><a href="">Terms of Service</a></li>
-              <li><a href="">Cookies Settings</a></li>
+            <ul class="footer-bottom-list">
+              <li class="footer-bottom-item">
+                <a class="footer-bottom-link" href="">Privacy Policy</a>
+              </li>
+              <li class="footer-bottom-item">
+                <a class="footer-bottom-link" href="">Terms of Service</a>
+              </li>
+              <li class="footer-bottom-item">
+                <a class="footer-bottom-link" href="">Cookies Settings</a>
+              </li>
             </ul>
+            <p>2022 FoodSta. All right reserved.</p>
           </div>
         </div>
       </section>
