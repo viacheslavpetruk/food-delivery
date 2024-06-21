@@ -157,15 +157,39 @@ button {
   margin-right: 51px;
 }
 .benefits-img-section {
-  border: 5px solid #fff;
-  border-radius: 100%;
+  position: relative;
 }
-
 .benefits-img-border {
-  border: 20px solid #ffe550;
-  border-radius: 100%;
+  transform: translateX(-203px);
+  transform: translateY(47px);
+  z-index: 1;
 }
-
+.benefits-img-backgrond {
+  position: absolute;
+  z-index: 2;
+  width: 502px;
+  height: 502px;
+  border-radius: 100%;
+  background-color: #fff;
+  top: 70px;
+  left: 25px;
+}
+.benefits-img-gradient {
+  position: absolute;
+  z-index: 6;
+  width: 252px;
+  height: 87px;
+  border-radius: 100%;
+  background-color: linear-gradient(45deg, #208d67, #0f0f0e);
+  left: 130px;
+  top: 450px;
+}
+.benefits-img-aple {
+  position: absolute;
+  z-index: 4;
+  top: 0px;
+  left: 80px;
+}
 .benefits-text-section {
   margin-top: 76px;
   margin-bottom: 36px;
